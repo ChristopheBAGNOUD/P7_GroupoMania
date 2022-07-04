@@ -6,9 +6,11 @@ Installation du porjet :
 
 	- Porjet sous Nodejs 14.17.3
 
-	- Ouvrir un terminal sur /GroupoMania et effectuer un "npm install"
+	- Ouvrir un terminal sur /GroupoMania et effectuer un "npm install" 
+		- Execution du backend avec "npm start" => connexion à la base de données
 	
 	- Ouvrir un terminal sur /GroupoMania/client et effectuer un "npm install"
+		- Execution du frontend avec "npm start" => affichage du site sur une page internet
 
 Base de données :
 
@@ -20,7 +22,7 @@ Base de données :
 
 Port utilisé :
 
-	- Back-end : Port 5000
+	- Back-end : Port 5000 
 
 	- Front-end : Port 3000
 
