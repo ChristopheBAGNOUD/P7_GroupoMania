@@ -8,12 +8,11 @@ const DeleteCard = (props) => {
     const deleteQuote = () => dispatch(deletePost(props.id));
     return (
         <div onClick={() => {
-            if( window.confirm("Supprimer ?")) {
+            if (window.confirm("Supprimer ?")) {
                 deleteQuote();
             }
         }}>
             <img src="./img/icons/trash.svg" alt="poubelle" />
-            
         </div>
     );
 };

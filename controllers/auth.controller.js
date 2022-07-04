@@ -9,7 +9,7 @@ const createToken = (id) => {
     expiresIn: maxAge
   })
 };
-
+// Création d'un utilisateur dans la base de données
 module.exports.signUp = async (req, res) => {
   const {pseudo, email, password} = req.body
 
@@ -22,7 +22,7 @@ module.exports.signUp = async (req, res) => {
     res.status(200).send({ errors })
   }
 }
-
+// Connexion d'un utilisateur via la base de données
 module.exports.signIn = async (req, res) => {
   const { email, password } = req.body
 

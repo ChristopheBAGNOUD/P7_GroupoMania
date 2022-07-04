@@ -7,7 +7,6 @@ const SignInForm = () => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     
-
     const handlelogin = (e) => {
         e.preventDefault();
         const emailError = document.querySelector('.email.error');

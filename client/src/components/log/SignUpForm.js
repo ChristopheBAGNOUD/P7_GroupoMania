@@ -46,9 +46,7 @@ const SignUpForm = () => {
                     }
                 })
                 .catch((err) => console.log(err));
-
         }
-
     }
     return (
                 <form action="" onSubmit={handleRegister} id="sign-up-form">
@@ -75,9 +73,7 @@ const SignUpForm = () => {
                     <br />
 
                     <input type="submit" value="Valider Inscription" />
-                </form>
-            
-        
+                </form>  
     );
 };
 

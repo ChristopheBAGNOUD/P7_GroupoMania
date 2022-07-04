@@ -5,7 +5,7 @@ import profil from '../../pages/profil';
 import Navbar from '../Navbar';
 
 
-const index = () => {
+const Chemin = () => {
     return (
        <Router>
            <Navbar />
@@ -19,4 +19,4 @@ const index = () => {
     );
 };
 
-export default index;
+export default Chemin;

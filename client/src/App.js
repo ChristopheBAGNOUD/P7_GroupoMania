@@ -20,16 +20,13 @@ const App = () => {
     .then((res)=>{
       console.log(res);
       setUid(res.data);
-  
     })
-    .catch((err) => console.log(err + "c'est cassé"));
-    
+    .catch((err) => console.log(err + "error")); 
   };
   fetchToken();
 
   if(uid) dispatch(getUser(uid))
 }, [uid]);
- 
 
   return (
     <UidContext.Provider value={uid}>

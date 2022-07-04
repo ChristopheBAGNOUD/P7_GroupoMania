@@ -21,7 +21,6 @@ const NewPostForm = () => {
         setFile(e.target.files[0]);
         setVideo("");
     };
-
 // Création du l'article si on click sur le boutton "Envoyer"
     const handlePost = async () => {
         if(message || postPicture || video) {
@@ -39,7 +38,6 @@ const NewPostForm = () => {
             alert("Champ Vide");
         }
      }
-
 // Suppression de l'article en cours de saisi si on click sur "Annuler"
     const cancelPost = () => {
         setMessage("");
@@ -47,7 +45,6 @@ const NewPostForm = () => {
         setVideo("");
         setFile("");
     }
-
 // Mise au format de l'url si on post une vidéo Youtube
     const handleVideo = () => {
         let findLink = message.split(" ");
@@ -60,10 +57,8 @@ const NewPostForm = () => {
                 setMessage(findLink.join(" "));
                 setPostPicture("");
             }
-
         }
     };
-
     useEffect(() => {
         if (!isEmpty(userData)) setIdLoading(false);
         handleVideo();
@@ -73,11 +68,9 @@ const NewPostForm = () => {
             {/* Spinner pendant le chargement des posts */}
             {isLoading ? (
                 <i className='fas fa-spinner fa-pulse'></i>
-
             ) : (
                 <>
                     <div className="data">
-
                     </div>
                     {/* Permet le click sur l'image d'utilisateur lors du post pour renvoyé vers le profil  */}
                     <NavLink exact to="/profil">
@@ -112,7 +105,7 @@ const NewPostForm = () => {
                                                 src={video}
                                                 frameBorder="0"
                                                 allow="accelerometer; autolplay; clipboard-write; encrypted-media;
-                                        gyroscope; picture-in-picture"
+                                                gyroscope; picture-in-picture"
                                                 allowFullScreen
                                                 title={video}>
                                             </iframe>
@@ -121,7 +114,6 @@ const NewPostForm = () => {
                                 </div>
                             </li>
                         ) : null}
-
                         <div className="footer-form">
                             <div className="icon">
                                 {isEmpty(video) && (
@@ -146,7 +138,6 @@ const NewPostForm = () => {
                     </div>
 
                 </>
-
             )}
         </div>
     );

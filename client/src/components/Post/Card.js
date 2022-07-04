@@ -17,18 +17,17 @@ const Card = ({ post }) => {
     const [textUpdate, setTextUpdate] = useState(null);
     const [showComments, setShowComments ] = useState(false);
     const dispatch = useDispatch();
+    
     const updateItem =  () => {
         if(textUpdate) {
             dispatch(updatePost(post._id, textUpdate));
         }
         setIsUpdated(false);
-
     }
-
     useEffect(() => {
         !isEmpty(usersData[0]) && setIsLoading(false); 
     },[userData])
-    
+
     return (
        <li className='card-container' key={post._id}>
         {isLoading ? (
