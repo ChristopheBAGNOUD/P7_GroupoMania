@@ -4,7 +4,7 @@ Projet réalisé avec Nodejs / MongoDB / React
 
 Installation du porjet :
 
-	- Porjet sous Nodejs 14.17.3
+	- Projet sous Nodejs 14.17.3
 
 	- Ouvrir un terminal sur /GroupoMania et effectuer un "npm install" 
 		- Execution du backend avec "npm start" => connexion à la base de données
